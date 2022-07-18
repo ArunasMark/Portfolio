@@ -147,6 +147,7 @@ body {
       top: 380px;
       display: flex;
       justify-content: center;
+      align-items: center;
       background: linear-gradient(
         270deg,
         #13adc7 0%,
@@ -167,7 +168,7 @@ body {
       a:hover {
         line-height: 3px;
         text-decoration-line: underline;
-        text-decoration-color: #6978d1;
+        text-decoration-color: #0d2ff0;
       }
     }
   }
