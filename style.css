@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0f1624;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+body .container {
+  position: absolute;
+  height: 900px;
+  width: 100%;
+  max-width: 1200px;
+  background: #0f1624;
+}
+body .container header {
+  width: 1200px;
+  height: 137px;
+  background: #0f1624;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+body .container header .logo {
+  width: 200px;
+  height: 137px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+body .container header .logo img {
+  width: 49px;
+  height: 49px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+body .container header .logo img:hover {
+  background-color: #6978d1;
+  border-radius: 50px;
+}
+body .container header .logo a {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+  text-decoration: none;
+  color: #ffffff;
+}
+body .container header .logo a:hover {
+  line-height: 3px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6978d1;
+          text-decoration-color: #6978d1;
+}
+body .container header .menu {
+  width: 495px;
+  height: 137px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container header .menu .underline {
+  position: relative;
+}
+body .container header .menu .underline::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 4px;
+  border-radius: 83px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+}
+body .container header .menu a {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+  text-decoration: none;
+  color: #ffffff;
+}
+body .container header .menu a:hover {
+  line-height: 3px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6978d1;
+          text-decoration-color: #6978d1;
+}
+body .container .social_icons {
+  width: 100px;
+  height: 137px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container .social_icons .github {
+  width: 33px;
+  height: 33px;
+  color: #ffffff;
+  margin-left: 47px;
+}
+body .container .social_icons .github:hover {
+  background-color: #6978d1;
+  border-radius: 50px;
+}
+body .container .social_icons .union {
+  color: #0f1624;
+  background: #ffffff;
+  border-radius: 3px;
+  width: 31px;
+  height: 31px;
+  margin-right: -103px;
+}
+body .container .social_icons .union:hover {
+  background-color: #6978d1;
+}
+body .text_button {
+  max-width: 810px;
+  width: 100%;
+  height: 500px;
+  left: 143px;
+  top: 150px;
+  background: #0f1624;
+  position: relative;
+}
+body .text_button .text {
+  height: 340px;
+  position: relative;
+}
+body .text_button .text h1 {
+  font-size: 55px;
+  color: #ffffff;
+  font-family: Poppins;
+}
+body .text_button .text p {
+  color: #bcbcbc;
+  margin-top: 70px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body .text_button .button {
+  position: absolute;
+  max-width: 280px;
+  width: 100%;
+  height: 80px;
+  left: 2px;
+  top: 383px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 83px;
+}
+body .text_button .button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 80px;
+  position: absolute;
+}
+body .text_button .button a:hover {
+  line-height: 3px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #0d2ff0;
+          text-decoration-color: #0d2ff0;
+}
+body .hero_img {
+  position: relative;
+  right: -563px;
+  top: -434px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    visibility: hidden;
+  }
+  .hamburger {
+    width: 45px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 35px;
+  }
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    display: block;
+    background: white;
+    margin-bottom: 6px;
+  }
+}/*# sourceMappingURL=style.css.map */
