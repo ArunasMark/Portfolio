@@ -5,55 +5,228 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/portfolio/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <title>Portfolio</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+  <div class="main_container">
+    <!-- burgeris -->
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#home">Home</a></li>
+        <li><a class="menu__item" href="#project1">Portfolio</a></li>
+        <li><a class="menu__item" href="#technologies">Technologies</a></li>
+        <li><a class="menu__item" href="#about_me">About me</a></li>
+        <li><a class="menu__item" href="#contacts">Contacts</a></li>
+      </ul>
     </div>
+
     <header>
 
       <div class="logo">
         <a href="index.html"><img src="./assets/logo image.svg" alt="logo" /></a>
-        <a href="#" target="_blank">Portfolio</a>
+        <a class="port" href="#" target="_parent">Portfolio</a>
       </div>
-
       <div class="menu">
-        <a class="underline" href="#" target="_blank">Projects</a>
-        <a href="#" target="_blank">Technologies</a>
-        <a href="#" target="_blank">About me</a>
+        <a href="#projects">Projects</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#about_me">About me</a>
       </div>
       <div class="social_icons">
         <a href="#" target="_blank"><img class="github" src="./assets/Icon.svg" alt="GitHub" /></a>
         <a href="#" target="_blank"><img class="union" src="./assets/Union.svg" alt="Union" /></a>
       </div>
     </header>
-
-    <div class="text_button">
+    <div class="first_container">
       <div class="text">
-        <h1>Lorem ipsum dolor sit amet</h1>
+        <h1 id="home">Lorem ipsum dolor sit amet</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-          quas, unde perferendis doloribus amet earum iusto incidunt iste illum
-          fuga.
+          quas, unde perferendis doloribus amet earum iusto incidunt iste
+          illum fuga.
         </p>
-        <div class="hero_img">
-          <img src="assets/hero_img.svg" alt="hero_img" />
-        </div>
       </div>
       <div class="button">
-        <a href="#" target="_blank">Let's begin</a>
+        <a href="#projects">Let's begin</a>
+      </div>
+      <div class="img_hero">
+        <img src="./assets/hero_img.svg" alt="imghero" />
       </div>
     </div>
+    <!--  antra dalis -->
+    <div class="second_container" id="projects">
+      <div class="second_title">
+        <h2 id="project1">Projects</h2>
+      </div>
+      <div class="card_box1">
+        <div class="text_button1">
+          <h3>PROJECT 1</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Obcaecati dolores non deleniti, dolore blanditiis illo maiores
+            animi ipsa eveniet?
+          </p>
+          <div class="button1">
+            <a href="#" target="_blank">Look it up</a>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="/assets/PC_image.jpg" alt="computers" />
+        </div>
+      </div>
+      <div class="cards_box2">
+        <div class="picture2">
+
+          <img src="/assets/PC_image.jpg" alt="picture2" />
+
+          <div class="text_button">
+            <h3>PROJECT 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              placeat?
+            </p>
+            <div class="button2">
+              <a href="#" target="_blank">Look it up</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="picture3">
+
+
+          <img src="/assets/PC_image.jpg" alt="picture3" />
+          <div class="text_button">
+            <h3>PROJECT 3</h3>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              placeat?
+            </p>
+            <div class="button3">
+              <a href="#" target="_blank">Look it up</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Trecia dalis -->
+    <div class="third_container">
+
+      <div class="first_box" id="technologies">
+        <h2>Technologies</h2>
+        <div class="range_text">
+          <h3>HTML</h3>
+          <p>Advance</p>
+        </div>
+
+        <div class="range">
+          <div class="line1"></div>
+        </div>
+        <div class="range_text">
+          <h3>CSS, Sass & Bootstrap</h3>
+          <p>Advance</p>
+        </div>
+        <div class="range">
+          <div class="line2"></div>
+        </div>
+        <div class="range_text">
+          <h3>JavaScript, TypeScript & JQuery</h3>
+          <p>Beginner</p>
+        </div>
+        <div class="range">
+          <div class="line3"></div>
+        </div>
+        <div class="range_text">
+          <h3>UI design in Figma</h3>
+          <p>Beginner</p>
+        </div>
+        <div class="range">
+          <div class="line4"></div>
+        </div>
+        <div class="range_text">
+          <h3>Angular</h3>
+          <p>Beginner</p>
+        </div>
+        <div class="range">
+          <div class="line5"></div>
+        </div>
+        <div class="range_text">
+          <h3>React</h3>
+          <p>Beginner</p>
+        </div>
+        <div class="range">
+          <div class="line6"></div>
+        </div>
+      </div>
+    </div>
+    <div class="four_container">
+      <h3>Additional technologies and skills</h3>
+      <div class="skills">
+        <div class="skills1">
+          <p>Git</p>
+          <p>Quick learning</p>
+        </div>
+        <div class="skills2">
+          <p>Teamwork</p>
+          <p>B2 english</p>
+        </div>
+      </div>
+    </div>
+    <div class="five_container" id="about_me">
+      <h2>About me</h2>
+      <div class="five_container_box">
+        <div class="five_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam rem quae, officiis
+          excepturi
+          corrupti est nostrum repellendus animi quaerat eaque! Quam rem quae, officiis
+          excepturi
+          corrupti est nostrum repellendus animi quaerat eaque!</div>
+        <div class="five_picture">
+          <div class="picture1">
+            <img class="buble" src="./assets/burbuliukas.svg" alt="burbulas">
+
+            <img class="avatar" src="./assets/Foto 1.jpg" alt="foto">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <footer id="contacts">
+      <div class="phone_number">
+        <h3>Call me:</h3>
+        <a href="#">123-321-456</a>
+      </div>
+      <div class="email">
+        <h3>Email:</h3>
+        <a href="#">email@mail.com</a>
+
+      </div>
+      <div class="social_icons">
+        <a href="#" target="_blank"><img class="github" src="./assets/Icon.svg" alt="GitHub" /></a>
+        <a href="#" target="_blank"><img class="union" src="./assets/Union.svg" alt="Union" /></a>
+
+      </div>
+    </footer>
   </div>
+
+  <script></script>
 </body>
 
 </html>
